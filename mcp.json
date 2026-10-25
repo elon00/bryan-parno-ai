@@ -1,0 +1,51 @@
+{
+  "name": "bryan-parno-ai-mcp",
+  "version": "1.0.0",
+  "description": "Bryan Parno AI Model Context Protocol Server for Autonomous Formal Verification of Systems, Verifiable Computation, Zero-Knowledge Cryptography & High-Assurance Architecture Protocol",
+  "tools": [
+    {
+      "name": "audit_formal_verification_proof",
+      "description": "Inspect Dafny and Coq formal verification traces to verify functional correctness and absence of runtime bugs in systems code",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "proof_file": {
+            "type": "string"
+          },
+          "target_kernel": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "proof_file"
+        ]
+      }
+    },
+    {
+      "name": "disburse_formal_methods_grant",
+      "description": "Trigger automated micro-escrow releases for formally verified crypto library development, certified compilers, and zero-defect systems engineering",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string"
+          },
+          "recipient": {
+            "type": "string"
+          },
+          "amount_wei": {
+            "type": "string"
+          },
+          "proof_hash": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "category",
+          "recipient",
+          "amount_wei"
+        ]
+      }
+    }
+  ]
+}
